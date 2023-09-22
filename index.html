@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>漫画</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/message_view.js"></script>
+</head>
+
+<body>
+    
+  <div class="stepbar" id="stepbar">
+    <li class="item active" id="ki">起</li>
+    <li class="item" id="syou">承</li>
+    <li class="item" id="ten">転</li>
+    <li class="item" id="ketu">結</li>
+  </div>
+<div id="capture">
+<div id="move">
+<div class="koma-area" id="area1">
+    <img src="images/koma1.png" class="koma-img" alt="">
+    <div class="koma-serif koma1-1" id="koma-serif1-1"></div>
+    <div class="koma-serif koma1-2" id="koma-serif1-2"></div>
+</div>
+<div class="koma-area" id="area2">
+    <img src="images/koma2.png" class="koma-img" alt="">
+    <div class="koma-serif koma2-1" id="koma-serif2-1"></div>
+    <div class="koma-serif koma2-2" id="koma-serif2-2"></div>
+</div>
+<div class="koma-area" id="area3">
+    <img src="images/koma3.png" class="koma-img" alt="">
+    <div class="koma-serif koma3-1" id="koma-serif3-1"></div>
+    <div class="koma-serif koma3-2" id="koma-serif3-2"></div>
+</div>
+<div class="koma-area" id="area4">
+    <img src="images/koma4.png" class="koma-img" alt="">
+    <div class="koma-serif koma4-1" id="koma-serif4-1"></div>
+    <div class="koma-serif" id="koma-serif4-2"></div>
+</div>
+</div>
+</div>
+
+<section class="voice" id="voice-area">
+    <input type="text" class="serif" id="serif" autocomplete="off" 
+    placeholder="セリフを入れてね！" onfocus="this.select();" value="">
+    <div class="voice-btn"><img src="images/voice.png" id="voice-btn" alt="">
+        <div class="voice-ex">声で入力！</div>
+    </div>
+</section>
+
+<section class="random" id="random"><div class="random-ex">ランダム</div><img src="images/random.png" alt=""></section>
+
+<section id="sample" class="sample001">
+
+    <div class="jumbotron top">
+        <div class="container">
+
+            <div class="messageView" id="default">
+                <div class="mv-contents">
+                    <p class="mv-name"></p>
+                    <div class="mv-comment">
+                        <p class="val"></p>
+                        <p class="pointer"></p>
+                    </div>
+                    <p class="mv-image character"><img src="" alt="" /></p>
+                </div>
+            </div><!-- /.messageView -->
+
+        </div>
+    </div><!-- /.jumbotron -->
+
+</section>
+
+
+<div class="slider-wrap" id="slider-wrap">
+ <ul class="slider" id="slider">
+    <li class="card"><div class="space">
+        <img class="card-img" src="images/koma1.png" alt="" id="koma1"></div>
+    </li>
+    <li class="card"><div class="space">
+        <img class="card-img" src="images/koma2.png" alt="" id="koma2"></div>
+    </li>
+    <li class="card"><div class="space">
+        <img class="card-img" src="images/koma3.png" alt="" id="koma3"></div>
+    </li>
+    <li class="card"><div class="space">
+        <img class="card-img" src="images/koma4.png" alt="" id="koma4"></div>
+    </li>
+  </ul>
+</div>
+
+<div class="back-btn" id="back-btn">もどる</div>
+<div class="next-btn" id="next-btn">つぎへ</div>
+
+<a href="" class="hozon" id="plotter-img" download="manga.png">画像を保存</a>
+<!--ダウンロードリンクを設定するaタグ-->
+<!--download属性の値は ダウンロードしたときのファイル名になります-->
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/html2canvas.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/manga.js"></script>
+
+</body>
+
+</html>
